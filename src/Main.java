@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Pick a number check the result.");
-        int inputtedNumber;
-        Scanner input = new Scanner(System.in);
-        inputtedNumber = input.nextInt();
-        String message;
-
-        if(inputtedNumber < 5 ){
-            message = " You selected number " + inputtedNumber + " is less than 5";
-        }else{
-            message = " You selected number " + inputtedNumber + " is greater than 5";
+        System.out.println("Playing song one.");
+        Boolean isOnRepeat = true;
+        Scanner scanner = new Scanner(System.in);
+        while (isOnRepeat){
+            System.out.println("Do you want to repeat the song again?");
+            String userInput = scanner.next();
+            if("yes".equals(userInput)){
+                System.out.println("Playing song one on repeat.");
+            }else{
+                isOnRepeat = false;
+                System.out.println("Playing next song.");
+            }
         }
-
-        System.out.println(inputtedNumber + message);
     }
 }
