@@ -2,23 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int studentAge = 15;
-        double studentGPA = 4.45;
-        String firstName = "Imam";
-        String lastName = "Hasan";
-        char firstInitial = firstName.charAt(0);
-        char lastInitial = lastName.charAt(0);
-        System.out.println("Age: " + studentAge);
-        System.out.println("GPA: " + studentGPA);
-        System.out.println("First Initial : " + firstInitial);
-        System.out.println("Last Initial: " + lastInitial);
-        System.out.println("First Name: " + firstName);
-        System.out.println("Last Name: " + lastName);
-        System.out.println(firstName + " " + lastName + " has of GPA " + studentGPA);
-
+        System.out.println("Pick a number check the result.");
+        int inputtedNumber;
         Scanner input = new Scanner(System.in);
-        studentGPA = input.nextDouble();
+        inputtedNumber = input.nextInt();
+        String message;
 
-        System.out.println(firstName + " " + lastName + " now has of GPA " + studentGPA);
+        if(inputtedNumber < 5 ){
+            message = " You selected number " + inputtedNumber + " is less than 5";
+        }else{
+            message = " You selected number " + inputtedNumber + " is greater than 5";
+        }
+
+        System.out.println(inputtedNumber + message);
     }
 }
