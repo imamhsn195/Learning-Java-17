@@ -4,9 +4,13 @@ public class Main {
         double studentGPA = 4.45;
         char firstInitial = 'I';
         char lastInitial = 'N';
+        String firstName = "Imam";
+        String lastName = "Hasan";
         System.out.println("Age: " + studentAge);
         System.out.println("GPA: " + studentGPA);
         System.out.println("First Initial : " + firstInitial);
         System.out.println("Last Initial: " + lastInitial);
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
     }
 }
