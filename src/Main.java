@@ -1,19 +1,14 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Playing song one.");
-        Boolean isOnRepeat = true;
+    public static void announceTeaTime(){
+        System.out.println("Waiting for tea time...");
+        System.out.println("Please enter anything and then enter to start tea time.");
         Scanner scanner = new Scanner(System.in);
-        while (isOnRepeat){
-            System.out.println("Do you want to repeat the song again?");
-            String userInput = scanner.next();
-            if("yes".equals(userInput)){
-                System.out.println("Playing song one on repeat.");
-            }else{
-                isOnRepeat = false;
-                System.out.println("Playing next song.");
-            }
-        }
+        scanner.next();
+        System.out.println("Tea time started...");
+    }
+    public static void main(String[] args) {
+        announceTeaTime();
     }
 }
