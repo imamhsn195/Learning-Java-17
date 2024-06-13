@@ -9,6 +9,9 @@ public class Main {
         System.out.println("Tea time started...");
     }
     public static void main(String[] args) {
+        System.out.println("Welcome to java");
         announceTeaTime();
+
+        System.out.println("Finished execution.");
     }
 }
