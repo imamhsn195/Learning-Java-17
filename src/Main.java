@@ -1,17 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void announceTeaTime(){
-        System.out.println("Waiting for tea time...");
-        System.out.println("Please enter anything and then enter to start tea time.");
-        Scanner scanner = new Scanner(System.in);
-        scanner.next();
-        System.out.println("Tea time started...");
+    public static void calculateTotalMealPrice(Double listedPrice, Double tipRate, Double taxRate){
+        Double tips = listedPrice * tipRate;
+        Double taxes = listedPrice * taxRate;
+        Double totalMealPrice = listedPrice + tips + taxes;
+        System.out.println("Your total meal price is " + totalMealPrice);
     }
     public static void main(String[] args) {
-        System.out.println("Welcome to java");
-        announceTeaTime();
-
-        System.out.println("Finished execution.");
+        calculateTotalMealPrice(15.0,0.3,0.25);
     }
 }
