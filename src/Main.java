@@ -1,15 +1,16 @@
-import java.util.Scanner;
-
 public class Main {
-    public static double calculateTotalMealPrice(Double listedPrice, Double tipRate, Double taxRate){
-        Double tips = listedPrice * tipRate;
-        Double taxes = listedPrice * taxRate;
-        Double totalMealPrice = listedPrice + tips + taxes;
-        return totalMealPrice;
-    }
+
     public static void main(String[] args) {
-        double groupMealTotal = calculateTotalMealPrice(100.0,0.2,0.25);
-        double perMemberMealTotal = groupMealTotal/5;
-        System.out.println("Per member cost: " + perMemberMealTotal);
+        double yearlyEarnings = calculateYearlyEarnings(85.5, 35);
+        System.out.println("Your total earnings is " + yearlyEarnings);
     }
-}
+
+    public static double calculateYearlyEarnings(double hoursPerWeek, double amountPerHour) {
+            // Your code goes here.
+            if(hoursPerWeek < 0 || amountPerHour < 0){
+                return 0;
+            }
+            double result = hoursPerWeek * amountPerHour * 52;
+            return result;
+        }
+    }
