@@ -1,16 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-        Triangle triangleB = new Triangle(3, 2.598, 3,3,3);
+        // This is how your code will be called.
+        // You can edit this code to try different testing cases.
 
-        double triangleAArea = triangleA.findArea();
-        System.out.println("Area of A is " + triangleAArea);
-        System.out.println(triangleA.sideLenOne);
-
-        double triangleBArea = triangleB.findArea();
-        System.out.println("Area of B is " + triangleBArea);
-        System.out.println(triangleB.base);
-
-        System.out.println("Getting static variable from class is " + Triangle.numOfSides);
+        String bookName = "Best Software Developer Tips";
+        Book book = new Book(bookName);
+        String result = book.getName();
+        System.out.println(result);
+        assert result.equals("Best Software Developer Tips");
     }
 }
