@@ -10,5 +10,7 @@ public class Main {
         double triangleBArea = triangleB.findArea();
         System.out.println("Area of B is " + triangleBArea);
         System.out.println(triangleB.base);
+
+        System.out.println("Getting static variable from class is " + Triangle.numOfSides);
     }
 }
