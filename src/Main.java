@@ -5,8 +5,10 @@ public class Main {
 
         double triangleAArea = triangleA.findArea();
         System.out.println("Area of A is " + triangleAArea);
+        System.out.println(triangleA.sideLenOne);
 
         double triangleBArea = triangleB.findArea();
         System.out.println("Area of B is " + triangleBArea);
+        System.out.println(triangleB.base);
     }
 }
